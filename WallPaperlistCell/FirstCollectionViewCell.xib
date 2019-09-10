@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="gTV-IL-0wX" customClass="FirstCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90m-Jk-ahg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-d3-Mmu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            </imageView>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5N-LM-Sdf">
+                                <rect key="frame" x="10" y="130" width="300" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-Mt-VIF">
+                                        <rect key="frame" x="8" y="8" width="284" height="44"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aBa-Mt-VIF" secondAttribute="trailing" constant="8" id="4R0-N1-ICQ"/>
+                                    <constraint firstItem="aBa-Mt-VIF" firstAttribute="top" secondItem="Q5N-LM-Sdf" secondAttribute="top" constant="8" id="DJI-wC-5ah"/>
+                                    <constraint firstAttribute="bottom" secondItem="aBa-Mt-VIF" secondAttribute="bottom" constant="8" id="HZE-gw-TDX"/>
+                                    <constraint firstAttribute="height" constant="60" id="ceq-vQ-Khc"/>
+                                    <constraint firstItem="aBa-Mt-VIF" firstAttribute="leading" secondItem="Q5N-LM-Sdf" secondAttribute="leading" constant="8" id="hiN-mT-P5z"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 +" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I13-sP-P44">
+                                <rect key="frame" x="220" y="10" width="90" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V0U-lm-osT"/>
+                                    <constraint firstAttribute="width" constant="90" id="asZ-S7-San"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I13-sP-P44" firstAttribute="top" secondItem="90m-Jk-ahg" secondAttribute="top" constant="10" id="ItA-s0-tbz"/>
+                            <constraint firstAttribute="bottom" secondItem="bjy-d3-Mmu" secondAttribute="bottom" id="JQP-NG-bkx"/>
+                            <constraint firstItem="Q5N-LM-Sdf" firstAttribute="leading" secondItem="90m-Jk-ahg" secondAttribute="leading" constant="10" id="Jb0-ey-HVl"/>
+                            <constraint firstAttribute="trailing" secondItem="I13-sP-P44" secondAttribute="trailing" constant="10" id="bsm-kt-wld"/>
+                            <constraint firstAttribute="trailing" secondItem="bjy-d3-Mmu" secondAttribute="trailing" id="cL2-lH-9Rv"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5N-LM-Sdf" secondAttribute="bottom" constant="10" id="jBD-4j-ln8"/>
+                            <constraint firstItem="bjy-d3-Mmu" firstAttribute="leading" secondItem="90m-Jk-ahg" secondAttribute="leading" id="pk1-p8-MDW"/>
+                            <constraint firstAttribute="trailing" secondItem="Q5N-LM-Sdf" secondAttribute="trailing" constant="10" id="sB0-Yo-WAn"/>
+                            <constraint firstItem="bjy-d3-Mmu" firstAttribute="top" secondItem="90m-Jk-ahg" secondAttribute="top" id="vq0-OU-9gh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="90m-Jk-ahg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ili-fi-MUs"/>
+                <constraint firstAttribute="bottom" secondItem="90m-Jk-ahg" secondAttribute="bottom" id="fwx-1D-PuO"/>
+                <constraint firstItem="90m-Jk-ahg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k1s-9M-LsW"/>
+                <constraint firstAttribute="trailing" secondItem="90m-Jk-ahg" secondAttribute="trailing" id="m8y-li-3qh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="imgCell" destination="bjy-d3-Mmu" id="G1g-iV-tJv"/>
+                <outlet property="lblTitle" destination="aBa-Mt-VIF" id="Wvm-pe-Z8Q"/>
+                <outlet property="lblTotalCount" destination="I13-sP-P44" id="rmZ-rK-pgw"/>
+                <outlet property="viewCell" destination="90m-Jk-ahg" id="jeT-PX-UZW"/>
+                <outlet property="viewLabel" destination="Q5N-LM-Sdf" id="cgE-Ec-kOU"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="40.848214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nature.jpg" width="600" height="510"/>
+    </resources>
+</document>
