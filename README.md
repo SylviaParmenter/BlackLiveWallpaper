@@ -1,6 +1,6 @@
-# BlackLiveWallpaper
+# YellowBlackLiveWallpaper
 
-Blackwallpaper
+YellowBlackLiveWallpaper
 
 Provide beautiful HD wallpapers, provide HD wallpapers for nature, city, animals, cartoons, etc., choose your favorite wallpapers, save to albums.
 
